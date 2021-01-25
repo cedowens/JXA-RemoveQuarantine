@@ -29,6 +29,8 @@ You can run this via Mythic's jsimport function. However, **if you gain access v
 
 Steps:
 
+Follow steps 1 and 1 above regarding the filename extension. Then from a Mythic agent run:
+
 1. > jsimport remove-quarantine-Mythic.js
 
 2. > jsimport_call Remove()
