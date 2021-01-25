@@ -17,7 +17,7 @@ To run locally:
 
 > osascript removequarantine.js
 
-5. Check the quarantine attribute after step 3 and it will be removed by TextEdit
+5. Check the quarantine attribute after step 3 and it will be removed by TextEdit (ex: xattr [filename])
 
 6. You can then rename your file back to the original name
 
