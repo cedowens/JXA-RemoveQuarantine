@@ -25,7 +25,7 @@ To run locally:
 
 ## Running via Mythic
 
-You can run this via Mythic's jsimport function. However, if you gain access via an office macro the sandbox seems to prevent TextEdit from writing the file after opening which will cause this not to work (even when I tried prepending ~$ to the front of the filename this still did not work). If you have non-sandboxed access to a host then this will work via Mythic.
+You can run this via Mythic's jsimport function. However, **if you gain access via an office macro the sandbox seems to prevent TextEdit from writing the file after opening which will cause this not to work** (even when I tried prepending ~$ to the front of the filename this still did not work). If you have non-sandboxed access to a host then this will work via Mythic.
 
 Steps:
 
