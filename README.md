@@ -21,4 +21,17 @@ To run locally:
 
 6. You can then rename your file back to the original name
 
+-------------
+
+## Running via Mythic
+
+You can run this via Mythic's jsimport function. However, if you gain access via an office macro the sandbox seems to prevent TextEdit from writing the file after opening which will cause this not to work (even when I tried prepending ~$ to the front of the filename this still did not work). If you have non-sandboxed access to a host then this will work via Mythic.
+
+Steps:
+
+1. > jsimport remove-quarantine-Mythic.js
+
+2. > jsimport_call Remove()
+
+3. Quarantine attribute will be removed from the file
 
