@@ -29,11 +29,13 @@ You can run this via Mythic's jsimport function. However, **if you gain access v
 
 Steps:
 
-Follow steps 1 and 1 above regarding the filename extension. Then from a Mythic agent run:
+1. Edit the remove-quarantine-Mythic.js file and change the "NSWorkspace.sharedWorkspace.openFile" path value to your target file.
 
-1. > jsimport remove-quarantine-Mythic.js
+Then from a Mythic agent run:
 
-2. > jsimport_call Remove()
+2. > jsimport remove-quarantine-Mythic.js
 
-3. Quarantine attribute will be removed from the file
+3. > jsimport_call Remove()
+
+4. Quarantine attribute will be removed from the file
 
