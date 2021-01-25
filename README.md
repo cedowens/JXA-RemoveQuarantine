@@ -15,4 +15,5 @@ To run locally:
 
 4. Check the quarantine attribute after step 3 and it will be removed by TextEdit
 
+![caption](pic.gif)
 
