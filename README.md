@@ -1,9 +1,13 @@
 # JXA-RemoveQuarantine
 JXA script based on research by Jeff Johnson that uses TextEdit to remove the quarantine attribute from files. Jeff's original research is here: https://lapcatsoftware.com/articles/sandbox-escape.html
 
-This script relies on the file extension being .txt. The file type can be any file type as long as ".txt" is appended to the end. The reason for this is the script will cause macOS to use the default opener for .txt file types (which is TextEdit) in order to leverage TextEdit's entitlement (com.apple.security.files.user-selected.executable) which gives it the ability to remove the quarantine attribute when the file is saved. I was unable to find a way to make the objc "withApplication:@TextEdit" call in JXA so I used this method as a fallback to ensure TextEdit is opened.
+This script relies on:
 
-This may not be feasible for red team ops due to the brief pop up that occurs when TextEdit opens the file (depends on your objectives). However, this is an interesting demo into how TextEdit can be leveraged to remove file quarantine attributes.
+1. The file extension being .txt. The file type can be any file type as long as ".txt" is appended to the end. The reason for this is the script will cause macOS to use the default opener for .txt file types (which is TextEdit) in order to leverage TextEdit's entitlement (com.apple.security.files.user-selected.executable) which gives it the ability to remove the quarantine attribute when the file is saved. I was unable to find a way to make the objc "withApplication:@TextEdit" call in JXA so I used this method as a fallback to ensure TextEdit is opened.
+
+2. Terminal having access to control TextEdit. If Terminal does not have this access, a pop up will occur requesting to allow Terminal access to control TextEdit.
+
+This may not be feasible for red team ops due to the brief pop up that occurs when TextEdit opens the file as well as due to condition number 2 above. However, this is an interesting demo into how TextEdit can be leveraged to remove file quarantine attributes.
 
 To run locally:
 
